@@ -25,3 +25,7 @@ LukehmuTestBundle_cat:
     pattern: /cat/{catID}
     defaults: { _controller: LukehmuTestBundle:Category:cat }
     requirements: { catID: \d+ }
+    
+LukehmuTestBundle_newuser:
+    pattern: /newuser/
+    defaults: { _controller: LukehmuTestBundle:User:new }
