@@ -1,0 +1,6 @@
+<strong>Category List:</strong>
+<ul>
+{% for category in categories %}
+<li><a href="{{ path('LukehmuTestBundle_cat',{'catID': category.id}) }}">{{ category.name }}</a>
+{% endfor %}
+</ul>

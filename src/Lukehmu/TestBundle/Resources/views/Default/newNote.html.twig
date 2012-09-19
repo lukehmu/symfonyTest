@@ -1,0 +1,10 @@
+{% extends 'LukehmuTestBundle:Default:base.html.twig' %}
+{% block heading %}Make a new note{% endblock %}
+{% block body %}
+
+<form action="{{ path('LukehmuTestBundle_newnote') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+
+    <input type="submit" />
+</form>
+{% endblock %}

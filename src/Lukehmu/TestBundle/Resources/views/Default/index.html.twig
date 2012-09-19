@@ -1,0 +1,17 @@
+{% extends 'LukehmuTestBundle:Default:base.html.twig' %}
+        {% block stylesheets %}
+    		{{ parent() }}
+		{% endblock %}
+{% block heading %}Luke's note machine all notes{% endblock %}
+{% block body %}
+{% if allNotes|length > 0 %}
+<strong>Notes:</strong>
+    <ul>
+    {% for note in allNotes %}
+        <li><a href="{{ path('LukehmuTestBundle_singlenote',{'noteID': note.id}) }}">{{ note.noteSubject }}</a> - {{ note.noteBody }}
+    {% endfor %}
+    </ul>
+{% else %} Sozzles, no notes!
+{% endif %}
+{% render 'LukehmuTestBundle:Category:allCategories' %}
+{% endblock %}

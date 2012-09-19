@@ -1,0 +1,14 @@
+{% extends 'LukehmuTestBundle:Default:base.html.twig' %}
+{% block heading %}Single note{% endblock %}
+{% block body %}
+<strong>Note details:</strong>
+    <ul id="noteuL">
+        <li><strong>Note subject:</strong> {{ note.noteSubject }}</li>
+        <li><strong>Note body:</strong> {{ note.noteBody }}</li>
+        <li><strong>Category:</strong> {{ category.name }}</li>
+    </ul>
+<a href="{{ path('LukehmuTestBundle_update',{'noteID': note.id}) }}">Edit note</a>
+<a href="{{ path('LukehmuTestBundle_delete',{'noteID': note.id}) }}">Delete note</a>
+
+
+{% endblock %}

@@ -1,0 +1,3 @@
+lukehmu_test:
+    resource: "@LukehmuTestBundle/Resources/config/routing.yml"
+    prefix:   /

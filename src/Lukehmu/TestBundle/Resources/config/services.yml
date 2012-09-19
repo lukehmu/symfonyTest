@@ -1,0 +1,7 @@
+parameters:
+#    lukehmu_test.example.class: Lukehmu\TestBundle\Example
+
+services:
+#    lukehmu_test.example:
+#        class: %lukehmu_test.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>{% block title %}Makin' notes{% endblock %}</title>
+        {% stylesheets '@LukehmuTestBundle/Resources/public/css/style.css' %}
+    		<link href="{{ asset_url }}" type="text/css" rel="stylesheet" />
+		{% endstylesheets %}
+    </head>
+        <body>
+<h1>{% block heading %}Luke's note machine{% endblock %}</h1>
+        {% block navigation %}
+            <nav>
+            <ul id="nav">
+                    <li><a href="{{ path('LukehmuTestBundle_homepage') }}">Home</a></li>
+                    <li><a href="{{ path('LukehmuTestBundle_newnote') }}">New Note</a></li>
+            </ul>
+            </nav>
+        {% endblock %}
+        {% block body %}
+            body
+        {% endblock %}
+        </body>
+</html>

@@ -1,0 +1,10 @@
+{% extends 'LukehmuTestBundle:Default:base.html.twig' %}
+{% block heading %}Update note{% endblock %}
+{% block body %}
+
+<form action="{{ path('LukehmuTestBundle_update', {'noteID': note.id}) }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+
+    <input type="submit" />
+</form>
+{% endblock %}

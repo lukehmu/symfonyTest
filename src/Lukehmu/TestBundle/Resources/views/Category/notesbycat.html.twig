@@ -1,0 +1,13 @@
+{% extends 'LukehmuTestBundle:Default:base.html.twig' %}
+        {% block stylesheets %}
+    		{{ parent() }}
+		{% endblock %}
+{% block heading %}Notes by category{% endblock %}
+{% block body %}
+Listing {{ notes|length }} notes
+<ul>
+{% for note in notes %}
+        <li><a href="{{ path('LukehmuTestBundle_singlenote',{'noteID': note.id}) }}">{{ note.noteSubject }}</a> - {{ note.noteBody }}
+{% endfor %}
+</ul>
+{% endblock %}

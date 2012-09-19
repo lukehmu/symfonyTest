@@ -1,0 +1,27 @@
+LukehmuTestBundle_delete:
+    pattern: /notes/{noteID}/delete/
+    defaults: { _controller: LukehmuTestBundle:Default:delete }
+    requirements: { noteID: \d+ }
+    
+LukehmuTestBundle_update:
+    pattern: /notes/{noteID}/update/
+    defaults: { _controller: LukehmuTestBundle:Default:update }
+    requirements: { noteID: \d+ }
+    
+LukehmuTestBundle_singlenote:
+    pattern:  /notes/{noteID}/
+    defaults: { _controller: LukehmuTestBundle:Default:note }
+    requirements: { noteID: \d+ }
+
+LukehmuTestBundle_newnote:
+    pattern:  /notes/new/
+    defaults: { _controller: LukehmuTestBundle:Default:new }
+
+LukehmuTestBundle_homepage:
+    pattern:  /notes/
+    defaults: { _controller: LukehmuTestBundle:Default:index }
+
+LukehmuTestBundle_cat:
+    pattern: /cat/{catID}
+    defaults: { _controller: LukehmuTestBundle:Category:cat }
+    requirements: { catID: \d+ }
