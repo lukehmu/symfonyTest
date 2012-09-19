@@ -357,7 +357,7 @@
                 "symfony/framework-bundle": "2.*",
                 "jms/cg": "1.0.0"
             },
-            "time": "2012-01-02 19:50:26",
+            "time": "2012-01-02 20:50:26",
             "type": "symfony-bundle",
             "installation-source": "dist",
             "autoload": {
@@ -399,7 +399,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-01-02 19:40:52",
+            "time": "2012-01-02 20:40:52",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -486,7 +486,7 @@
             "require": {
                 "php": ">=5.3.0"
             },
-            "time": "2012-01-02 20:32:49",
+            "time": "2012-01-02 21:32:49",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
