@@ -1,0 +1,14 @@
+# symfony files
+.DS_Store
+vendor/*
+app/cache/*
+app/logs/*
+*~
+ 
+# config files to ignore
+app/config/parameters.ini
+ 
+# eclipse PDT files
+.buildpath
+.project
+.settings
