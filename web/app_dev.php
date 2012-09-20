@@ -6,6 +6,10 @@ use Symfony\Component\HttpFoundation\Request;
 // read http://symfony.com/doc/current/book/installation.html#configuration-and-setup for more information
 //umask(0000);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8dd62eee839cac4e58cf4edeac7748a17c91b465
 
 $loader = require_once __DIR__.'/../app/bootstrap.php.cache';
 require_once __DIR__.'/../app/AppKernel.php';

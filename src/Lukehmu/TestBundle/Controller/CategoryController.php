@@ -15,7 +15,7 @@ class CategoryController extends Controller
 						->findAll();
 		if (!$categories)
 		{
-			throw $this->createNotFoundException('No note found for id '.$noteID);
+			throw $this->createNotFoundException('no cats found');
 		}
 		return $this->render('LukehmuTestBundle:Category:category.html.twig',array(
 				'categories' => $categories,
